@@ -12,8 +12,10 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react"
+    "jsx": "react",
+    "declaration": true,
+    "declarationDir": "dist/types"
   },
-  "include": ["src", "src/stories"],
+  "include": ["src"],
+  "exclude": ["**/*.stories.tsx"]
 }

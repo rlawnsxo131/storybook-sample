@@ -7,7 +7,6 @@
   "devDependencies": {
     "@babel/core": "^7.12.16",
     "@emotion/babel-plugin": "^11.2.0",
-    "@emotion/react": "^11.1.5",
     "@storybook/addon-actions": "^6.1.17",
     "@storybook/addon-essentials": "^6.1.17",
     "@storybook/addon-links": "^6.1.17",
@@ -26,14 +25,13 @@
     "typescript": "^4.1.5"
   },
   "dependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
     "storybook": "^6.1.17"
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build-package": "rollup -c"
+    "build:components": "rollup -c",
+    "build:types": "tsc --emitDeclarationOnly"
   },
   "peerDependencies": {
     "@emotion/react": "^11.1.5",
