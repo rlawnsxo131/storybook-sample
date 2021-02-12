@@ -8,12 +8,12 @@ interface ButtonProps {
 function Button({ color }: ButtonProps) {
   return (
     <div>
-      <button css={wrapper({ color })}>tt</button>
+      <button css={wrapper(color)}>tt</button>
     </div>
   );
 }
 
-const wrapper = ({ color }: ButtonProps) => css`
+const wrapper = (color: string) => css`
   background: white;
   color: ${color};
 `;
