@@ -6,7 +6,10 @@ module.exports = ({ config, mode }) => {
         loader: require.resolve('babel-loader'),
         options: {
           plugins: ['@emotion/babel-plugin'],
-          presets: [['react-app', { flow: false, typescript: true }]],
+          presets: [
+            ['react-app', { flow: false, typescript: true }],
+            require.resolve('@emotion/babel-preset-css-prop'),
+          ],
         },
       },
       require.resolve('react-docgen-typescript-loader'),

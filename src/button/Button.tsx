@@ -1,7 +1,5 @@
-/** @jsx jsx */
-/** @jsxRuntime classic */
-
-import { jsx, css } from '@emotion/react';
+import * as React from 'react';
+import { css } from '@emotion/react';
 
 interface ButtonProps {
   color: string;
